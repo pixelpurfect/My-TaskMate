@@ -47,3 +47,12 @@ body{
     border: 1px solid rgba( 255, 77, 109, 0.18 );
     padding: 20px;
 }
+
+.container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
