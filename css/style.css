@@ -56,3 +56,24 @@ body{
     width: 100%;
     margin-bottom: 20px;
 }
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.alert-message{
+    width: 100%;
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+}
+
+.alert-message.show{
+    display: block;
+    transform: scale(1);
+}
+
+.alert-message.hide{
+    display: none;
+}
