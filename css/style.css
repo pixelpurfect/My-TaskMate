@@ -11,3 +11,11 @@
     --color-primary: #F193A1;
     --color-secondary: #EA5E73;
 }
+
+body{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
