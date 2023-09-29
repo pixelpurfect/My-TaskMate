@@ -19,3 +19,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.author-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
