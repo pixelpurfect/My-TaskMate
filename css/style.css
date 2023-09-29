@@ -30,3 +30,20 @@ body{
     margin-bottom: 20px;
     text-align: center;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 400px;
+    min-width: 500px;
+    max-width: 1000px;
+    background: rgba( 255, 202, 212, 0.49 );
+    box-shadow: 0 8px 32px 0 rgba( 201, 24, 74, 0.3 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 77, 109, 0.18 );
+    padding: 20px;
+}
