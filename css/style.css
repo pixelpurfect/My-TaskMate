@@ -6,3 +6,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    --color-primary: #F193A1;
+    --color-secondary: #EA5E73;
+}
