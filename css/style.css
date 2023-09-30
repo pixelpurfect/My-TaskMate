@@ -22,14 +22,16 @@ body{
 
 .author-text{
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
+    color: #e75480;
 }
+
 
 .container {
     display: flex;
@@ -55,6 +57,7 @@ body{
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
+    color: #e75480;
 }
 
 header h1 {
@@ -140,3 +143,8 @@ header .input-section {
     margin-right: 10px;
 }
 
+
+.todos-filter button,
+.todo-actions button {
+    color: #F4C2C2; /* Change button text color to #e75480 */
+}
