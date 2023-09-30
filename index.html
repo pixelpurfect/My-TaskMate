@@ -15,3 +15,58 @@
         <link rel="icon" href="res/favicon.svg">
         <title>TaskMate | By Lakshaya Krishnaraj</title>
     </head>
+    <body>
+
+        <!-- Copyright -->
+        <div class="author-text">
+            <p>Made by <a href="https://github.com/pixelpurfect" target="_blank"><b>Lakshaya Krishnaraj</b></a></p>
+        </div>
+        
+        <div class="container">
+            <header>
+                <h1>My Pink TaskMate</h1>
+                <!-- Error message -->
+                <div class="alert-message"></div>
+                <div class="input-section">
+                    <input type="text" placeholder="Add a todo . . ." class="input input-bordered input-secondary w-full max-w-xs" />
+                    <input type="date" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
+                    <button class="btn btn-secondary add-task-button">
+                        <i class="bx bx-plus bx-sm"></i>
+                    </button>
+                </div>
+            </header>
+    
+            <div class="todos-filter">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn m-1">Filter</label>
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li onclick="filterTodos('all')"><a>All</a></li>
+                        <li onclick="filterTodos('pending')"><a>Pending</a></li>
+                        <li onclick="filterTodos('completed')"><a>Completed</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-secondary delete-all-btn">
+                    Delete All
+                </button>
+            </div>
+    
+             <table class="table w-full">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="todos-list-body">
+                </tbody>
+            </table>
+    
+        </div>
+    
+    
+        <!-- JS -->
+        <script src="js/main.js"></script>
+    </body>
+    </html>
