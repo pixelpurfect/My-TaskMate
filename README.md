@@ -1,6 +1,6 @@
 # My-TaskMate
 to-do list application!
-## 🟩 TaskMate [Web]
+## 🌸 TaskMate [Web]
 A to-do list application that allows users to add, edit, and delete tasks with ease. Users can set priorities and deadlines for tasks to help manage their time efficiently. 
 This project includes, 
 -	An aesthetic design (i made it pink cuz its my favorite color)
