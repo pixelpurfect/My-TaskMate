@@ -16,4 +16,4 @@ Todo List web app built using Tailwind CSS and JavaScript. The app allows users 
 - JavaScript: To handle the interactive functionality of the app.
 - Local Storage: To save todos for persistent data across browser sessions.
 ### Live Demo
-You can check out the live demo of the TaskMate web app [here](https://pixelpurfect.github.io/My-TaskMate/)).
+You can check out the live demo of the TaskMate web app [here](https://pixelpurfect.github.io/My-TaskMate/).
