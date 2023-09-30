@@ -130,12 +130,27 @@ function deleteTodo(id) {
 function editTodo(id) {
   let todo = todos.find((todo) => todo.id === id);
   task_input.value = todo.task;
+  date_input.value = todo.dueDate || ""; // Set the due date input
   todos = todos.filter((todo) => todo.id !== id);
   add_btn.innerHTML = "<i class='bx bx-check bx-sm'></i>";
-  saveToLocalStorage();
+
+  // Update the event listener for the add button
+  add_btn.removeEventListener("click", addTodo);
   add_btn.addEventListener("click", () => {
-    add_btn.innerHTML = "<i class='bx bx-plus bx-sm'></i>";
-    showAlertMessage("Todo updated successfully", "success");
+    // Check if the task input is empty
+    if (task_input.value === "") {
+      showAlertMessage("Please enter a task", "error");
+    } else {
+      todo.task = task_input.value;
+      todo.dueDate = date_input.value || ""; // Update the due date
+      todos.push(todo);
+      saveToLocalStorage();
+      showAllTodos();
+      task_input.value = "";
+      date_input.value = ""; // Clear the due date input
+      add_btn.innerHTML = "<i class='bx bx-plus bx-sm'></i>";
+      showAlertMessage("Todo updated successfully", "success");
+    }
   });
 }
 
@@ -154,6 +169,7 @@ function clearAllTodos() {
 function toggleStatus(id) {
   let todo = todos.find((todo) => todo.id === id);
   todo.completed = !todo.completed;
+  todo.status = todo.completed ? "completed" : "pending"; // Update the status
   saveToLocalStorage();
   showAllTodos();
 }
